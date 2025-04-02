@@ -16,16 +16,16 @@ The instances used in this dataset are taken from the **OPT-LIN track** of the b
 
 Each row corresponds to a single instance, and includes the following fields:
 
-| Column Name                  | Description                                                                |
-|-----------------------------|----------------------------------------------------------------------------|
-| `Instance`                  | Path or identifier of the PBO instance                                     |
-| `Extractor`                 | The backbone extractor used (`GuroBack`, `NapBack`, or `RoundingBack`)     |
-| `Extraction Time`           | Time in seconds required to extract the backbone                           |
-| `Number of Variables`       | Number of variables in the instance                                        |
-| `Objective`                 | Objective value (for optimization problems)                                |
-| `Optimization Solving Time` | Time in seconds used to find the optimum (if applicable)                   |
-| `Backbone Size`             | Number of literals in the backbone                                         |
-| `x_1`, ..., `x_k`           | Backbone status for each variable (see below)                              |
+| Column Name                  | Description                                                                                   |
+|-----------------------------|-----------------------------------------------------------------------------------------------|
+| `Instance`                  | Path to the PBO instance following the directory structure proposed in the PBO Competition 2024 |
+| `Extractor`                 | Backbone extractor used (`GuroBack`, `NapBack`, or `RoundingBack`)                            |
+| `Extraction Time`           | Time in seconds required to extract the backbone                                              |
+| `Number of Variables`       | Total number of variables in the instance                                                     |
+| `Objective`                 | Optimal objective value of the instance                                                       |
+| `Optimization Solving Time` | Time in seconds taken to solve the optimization problem and obtain the optimum                |
+| `Backbone Size`             | Number of literals that belong to the backbone                                                |
+| `x_1`, ..., `x_k`           | Backbone status of each variable (see section below)                                          |
 
 ### Backbone Variables (`x_i`)
 
