@@ -14,9 +14,9 @@ The instances used in this dataset are taken from the **OPT-LIN track** of the b
 
 ## Backbone Extractors Used
 
-- `[NapBack](https://github.com/BryanAlvarado777/napback)`: backbone extractor based in the integration of the solver NaPS and the backbone extractor CadiBack.
-- `[GuroBack](https://github.com/BryanAlvarado777/guroback)`: backbone extractor built upon the commercial solver Gurobi.
-- `[RoundingBack](https://github.com/matiasfrancia/roundingback.git)`: backbone extractor based in the native PBO solver RoundingSat.
+- [NapBack](https://github.com/BryanAlvarado777/napback): backbone extractor based in the integration of the solver NaPS and the backbone extractor CadiBack.
+- [GuroBack](https://github.com/BryanAlvarado777/guroback): backbone extractor built upon the commercial solver Gurobi.
+- [RoundingBack](https://github.com/matiasfrancia/roundingback.git): backbone extractor based in the native PBO solver RoundingSat.
 
 ---
 
