@@ -1,6 +1,6 @@
 # Backbone Extraction Dataset (SAT 2025)
 
-This repository contains the dataset `complete_backbones.tar.gz`, which includes backbone extraction results from three extractors on 8,351 Pseudo-Boolean Optimization (PBO) instances. The data was produced as part of the experiments described in the paper submitted to the SAT 2025 Conference.
+This repository contains the dataset `complete_backbones.tar.gz`, which includes backbone extraction results from three extractors on 8,351 Pseudo-Boolean Optimization (PBO) instances. The data was produced as part of the experiments described in a research paper submitted to the SAT 2025 Conference.
 
 The instances used in this dataset are taken from the **OPT-LIN track** of the benchmark proposed for the **Pseudo-Boolean Competition 2024**.
 
