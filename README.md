@@ -1,6 +1,6 @@
 # Backbone Extraction Dataset (SAT 2025)
 
-This repository contains the dataset `complete_backbones.tar.gz`, which includes backbone extraction results from three extractors on 8,351 Pseudo-Boolean Optimization (PBO) instances. The data was produced as part of the experiments described in our submission to the SAT 2025 Conference.
+This repository contains the dataset `complete_backbones.tar.gz`, which includes backbone extraction results from three extractors on 8,351 Pseudo-Boolean Optimization (PBO) instances. The data was produced as part of the experiments described in the paper submitted to the SAT 2025 Conference.
 
 The instances used in this dataset are taken from the **OPT-LIN track** of the benchmark proposed for the **Pseudo-Boolean Competition 2024**.
 
@@ -12,13 +12,21 @@ The instances used in this dataset are taken from the **OPT-LIN track** of the b
 
 ---
 
+## Backbone Extractors Used
+
+- `[NapBack](https://github.com/BryanAlvarado777/napback)`: backbone extractor based in the integration of the solver NaPS and the backbone extractor CadiBack.
+- `[GuroBack](https://github.com/BryanAlvarado777/guroback)`: backbone extractor built upon the commercial solver Gurobi.
+- `[RoundingBack](https://github.com/matiasfrancia/roundingback.git)`: backbone extractor based in the native PBO solver RoundingSat.
+
+---
+
 ## File Format and Structure
 
 Each row corresponds to a single instance, and includes the following fields:
 
 | Column Name                  | Description                                                                                   |
 |-----------------------------|-----------------------------------------------------------------------------------------------|
-| `Instance`                  | Path to the PBO instance following the directory structure proposed in the PBO Competition 2024 |
+| `Instance`                  | Path to the PBO instance following the directory structure proposed in the [PBO Competition 2024](https://www.cril.univ-artois.fr/PB24/) |
 | `Extractor`                 | Backbone extractor used (`GuroBack`, `NapBack`, or `RoundingBack`)                            |
 | `Extraction Time`           | Time in seconds required to extract the backbone                                              |
 | `Number of Variables`       | Total number of variables in the instance                                                     |
