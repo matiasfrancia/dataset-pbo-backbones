@@ -45,8 +45,3 @@ For each instance, the backbone columns follow the format `x_1`, `x_2`, ..., up 
 
 🔹 **Important**: The CSV includes headers up to `x_1281998`, corresponding to the maximum number of variables observed across all instances. However, each row contains values **only up to the number of variables in the respective instance**. Thus, rows are effectively "ragged" in length. The header line is provided for reference.
 
----
-
-## ⚠️ Notes on Usage
-
-Due to the varying number of variable columns per row, standard tools like `pandas.read_csv()` may not work out-of-the-box, as it assumes uniform row lengths. We recommend using custom parsing scripts or tools that can handle variable-length rows.
